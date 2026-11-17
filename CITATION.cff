@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use MaxEnt Studio Pro in your research, please cite both the software and the accompanying methodology paper as specified below."
+title: "MaxEnt Studio Pro: An Open-Source Dual-Engine GIS Framework for High-Resolution GeoTIFF Ingestion, In-Memory Raster Harmonization, and Interactive Presence-Only Modeling"
+version: "1.0.0"
+date-released: "2026-11-17"
+license: "MIT"
+type: software
+authors:
+  - family-names: "Chandra"
+    given-names: "K. S."
+    email: "kavikondalaschandra@gmail.com"
+    orcid: "https://orcid.org/0000-0002-0976-2058"
+    affiliation: "Independent Researcher, Archaeology and Spatial Geoinformatics Research, India"
+repository-code: "https://github.com/kschandra6-Research/maxent_presence_model"
+url: "https://github.com/kschandra6-Research/maxent_presence_model"
+doi: "10.5281/zenodo.placeholder"
+abstract: >-
+  MaxEnt Studio Pro is an open-source, full-stack computational GIS suite
+  designed to modernize Maximum Entropy (MaxEnt) presence-only spatial modeling.
+  It addresses key operational bottlenecks of legacy software by providing:
+  (1) automated in-memory affine snapping and bilinear reprojection for
+  multi-gigabyte GeoTIFF stacks (up to 2 GB), eliminating raster extent mismatch
+  crashes; (2) a dual-engine architecture supporting both the headless official
+  AMNH maxent.jar (v3.4.4) and a native pure-Python Scikit-Learn compatible
+  L-BFGS solver with hinge, quadratic, and product feature expansions; (3)
+  integrated presence-only validation metrics including the Continuous Boyce
+  Index (CBI) and True Skill Statistic (TSS); and (4) an interactive Leaflet/Folium
+  satellite web GIS interface with real-time decision cutoff filtering and
+  single-click publication-ready GIS exports.
+keywords:
+  - "maximum-entropy"
+  - "species-distribution-modeling"
+  - "ecological-niche-modeling"
+  - "continuous-boyce-index"
+  - "geotiff"
+  - "in-memory-raster-harmonization"
+  - "scikit-learn"
+  - "spatial-archaeology"
+  - "geoinformatics"
+  - "streamlit"
+  - "folium"
+preferred-citation:
+  type: article
+  title: "MaxEnt Studio Pro: An Open-Source Dual-Engine GIS Framework for High-Resolution GeoTIFF Ingestion, In-Memory Raster Harmonization, and Interactive Presence-Only Modeling"
+  authors:
+    - family-names: "Chandra"
+      given-names: "K. S."
+      orcid: "https://orcid.org/0000-0002-0976-2058"
+      email: "kavikondalaschandra@gmail.com"
+      affiliation: "Independent Researcher, Archaeology and Spatial Geoinformatics Research, India"
+  journal: "SoftwareX"
+  year: 2026
+  doi: "10.5281/zenodo.placeholder"
+  url: "https://github.com/kschandra6-Research/maxent_presence_model"
