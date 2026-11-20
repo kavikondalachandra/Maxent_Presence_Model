@@ -16,6 +16,7 @@ This platform transforms the traditional 2006-era MaxEnt software into an intera
 
 ## 📑 Table of Contents
 
+- [💻 Computer & Laptop Hardware Setup](#-computer--laptop-hardware-setup)
 - [🚀 Quickstart: How to Launch](#-quickstart-how-to-launch)
 - [✨ Key Features](#-key-features)
 - [📂 Folder Contents & Architecture](#-folder-contents--architecture)
@@ -27,6 +28,29 @@ This platform transforms the traditional 2006-era MaxEnt software into an intera
 - [📥 Export & Publication Suite](#-export--publication-suite)
 - [🔧 Troubleshooting & FAQ](#-troubleshooting--faq)
 - [📚 Scientific References](#-scientific-references)
+
+---
+
+## 💻 Computer & Laptop Hardware Setup
+
+MaxEnt Studio Pro is engineered to run seamlessly across all hardware classes—from ultralight battery-powered laptops up to multi-core GIS workstations.
+
+### Hardware Specification Tiers
+
+| Hardware Tier | Target Devices | CPU | RAM | Recommended Engine | Java Heap (`-Xmx`) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Tier 1: Portable / Field Laptop** | Netbooks, ultralights, older laptops | 2 Cores | **4 GB – 6 GB** | **Native Python Engine** (Runs in $<30$ MB RAM) | $1,024 - 1,536\text{ MB}$ |
+| **Tier 2: Standard Laptop & PC** *(Recommended)* | Modern consumer laptops, MacBooks, office PCs | 4–8 Cores | **8 GB – 16 GB** | **Dual Engine** (Python or Java) | $3,072 - 4,096\text{ MB}$ |
+| **Tier 3: High-End Workstation** | Multi-core GIS towers, HPC nodes | 8–16+ Cores | **32 GB – 64 GB+** | **Both Engines** (High-throughput parallel processing) | $8,192 - 16,384\text{ MB}$ |
+
+### 1-Click Hardware Prober & Installer
+To automatically inspect your laptop or computer hardware and generate the optimal configuration profile, run:
+```bash
+python system_config.py
+```
+- **Windows Laptops & Desktops**: Double-click [`setup_environment.bat`](file:///c:/Users/DuDu-PC/Downloads/maxent_presence_model/setup_environment.bat) to install dependencies and configure hardware automatically.
+- **macOS & Linux Laptops**: Run `./setup_environment.sh` followed by `./run_studio.sh`.
+- For complete memory tuning, battery conservation, and offline field setup instructions, see the complete [**Hardware Deployment Guide (`HARDWARE_CONFIG.md`)**](file:///c:/Users/DuDu-PC/Downloads/maxent_presence_model/HARDWARE_CONFIG.md).
 
 ---
 
@@ -223,7 +247,24 @@ The suite reports standard ecological niche validation statistics:
 
 ## 📥 Export & Publication Suite
 
-From the **Predictions & Export Suite** tab, download files with 1 click:
+Download publication-ready GIS rasters, tables, and full reports directly in **PDF** and **MS Word (.docx)** formats:
+
+### Publication Reports (PDF & MS Word)
+Download dedicated individual section reports or the complete comprehensive scientific report from each respective tab and from the **Reports Center**:
+
+| Report Component | Formats | Contents |
+| :--- | :--- | :--- |
+| **⚖️ Benchmark Summary & Maps** | `.pdf` & `.docx` | Empirical Java vs. Python solver benchmark, speedup metrics, and 3-panel spatial concordance map. |
+| **🗺️ Interactive Leaflet GIS Map** | `.pdf` & `.docx` | Geographic extent, bounding coordinates, raster cell dimensions, and 2D spatial suitability figure. |
+| **📈 ROC Curves & Diagnostics** | `.pdf` & `.docx` | High-res ROC curve plots, Area Under Curve (AUC), and optimal decision cutoff threshold criteria. |
+| **⭐ Variable Importance** | `.pdf` & `.docx` | Percent contribution rankings, permutation importance, and Jackknife driver breakdown. |
+| **📉 Response Curves** | `.pdf` & `.docx` | Multi-panel marginal environmental response curves across ecological predictor gradients. |
+| **🖼️ Official Response Curve Figures** | `.pdf` & `.docx` | Complete publication portfolio of official AMNH MaxEnt marginal and standalone single-variable response curve figures. |
+| **📋 Occurrence Predictions** | `.pdf` & `.docx` | Site-specific suitability scores, threshold classification, and suitability density histograms. |
+| **🖥️ Execution Logs & Details** | `.pdf` & `.docx` | System specifications, software stack, modeling hyperparameters, and engine console output. |
+| **📑 Comprehensive Model Report** | `.pdf` & `.docx` | **Master publication report** combining all 7 analytical sections into an executive manuscript. |
+
+### GIS Data & Visual Exports
 
 | Button | Format | Purpose |
 | :--- | :--- | :--- |
@@ -231,8 +272,8 @@ From the **Predictions & Export Suite** tab, download files with 1 click:
 | **📥 ESRI ASCII** | `.asc` | Legacy raster format for traditional spatial packages. |
 | **📥 Predictions** | `.csv` | Table of all presence points with predicted suitability scores. |
 | **📥 Map Image** | `.png` (300 DPI) | Publication-ready high-resolution suitability figure. |
-| **📥 Standalone Map** | `.html` | Self-contained Leaflet web map to open full-screen in any browser. |
-| **📦 Full Bundle** | `.zip` | Complete archive containing all rasters, CSVs, lambdas, and figures. |
+| **📥 Standalone Map** | `.html` | Self-contained Leaflet web map (OpenStreetMap & USGS) to open full-screen in any browser. |
+| **📦 Full Bundle** | `.zip` | Complete archive containing all rasters, CSVs, PDF & Word reports, lambdas, and figures. |
 
 ---
 

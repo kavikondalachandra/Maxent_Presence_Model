@@ -34,7 +34,20 @@ from .visualizer import (
     plot_model_diagnostics,
     plot_response_curves,
     plot_spatial_prediction,
+    plot_spatial_difference,
+    plot_spatial_comparison,
     create_interactive_map
+)
+from .report_generator import (
+    export_benchmark_report,
+    export_gis_map_report,
+    export_roc_diagnostics_report,
+    export_variable_importance_report,
+    export_response_curves_report,
+    export_official_response_curves_report,
+    export_occurrence_predictions_report,
+    export_execution_logs_report,
+    export_comprehensive_report
 )
 
 __version__ = "1.0.0"
@@ -58,5 +71,16 @@ __all__ = [
     "plot_model_diagnostics",
     "plot_response_curves",
     "plot_spatial_prediction",
+    "plot_spatial_difference",
+    "plot_spatial_comparison",
     "create_interactive_map",
+    "export_benchmark_report",
+    "export_gis_map_report",
+    "export_roc_diagnostics_report",
+    "export_variable_importance_report",
+    "export_response_curves_report",
+    "export_official_response_curves_report",
+    "export_occurrence_predictions_report",
+    "export_execution_logs_report",
+    "export_comprehensive_report",
 ]

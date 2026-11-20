@@ -1,0 +1,23 @@
+{
+    "system_info": {
+        "os": "Windows (11)",
+        "architecture": "AMD64",
+        "total_ram_gb": 7.85,
+        "cpu_cores": 8,
+        "java_installed": true,
+        "java_version": "java version \"26.0.2\" 2026-07-21",
+        "java_64bit": true
+    },
+    "hardware_tier": "Standard Laptop / Desktop PC (8-16 GB RAM)",
+    "recommended_settings": {
+        "default_engine": "python",
+        "java_heap_mb": 4020,
+        "streamlit_max_upload_mb": 2048,
+        "max_raster_dimension": 1500,
+        "threads": 4,
+        "server_port": 8501,
+        "browser_open": true,
+        "tile_caching": true
+    },
+    "profile_notes": "Optimal sweet spot for field laptops and standard desktops. Easily handles high-resolution 2 GB GeoTIFF layers."
+}
