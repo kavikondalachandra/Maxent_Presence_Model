@@ -14,11 +14,25 @@ tags:
   - Continuous Boyce Index
   - cultural resource management
 authors:
-  - name: K S Chandra
-    orcid: 0009-0000-0000-0000
+  - name: Prabash Sahu
+    orcid: 0000-0003-0691-0403
+    affiliation: 1
+  - name: K. S. Chandra
+    orcid: 0000-0002-0976-2058
+    corresponding: true
+    affiliation: 1
+  - name: Mohan Pardhi
+    affiliation: 1
+  - name: Ekta Dharkar
+    affiliation: 1
+  - name: Sushant Begade
+    orcid: 0009-0003-0804-1763
+    affiliation: 1
+  - name: Tanmoy Howlader
+    orcid: 0009-0006-2169-1201
     affiliation: 1
 affiliations:
-  - name: Independent Geospatial, Archaeological and Ecological Software Researcher, India
+  - name: Autonomous Department of Ancient Indian History, Culture and Archaeology, Rashtrasant Tukadoji Maharaj Nagpur University, Nagpur, Maharashtra, India, 440033
     index: 1
 date: 20 November 2026
 bibliography: paper.bib
